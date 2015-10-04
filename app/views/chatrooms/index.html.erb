@@ -1,7 +1,10 @@
-<%= link_to "Sign in", root_path %>
+<%= link_to "Sign in", new_user_session_path %>
 <%= link_to "Sign up", new_user_registration_path %>
 <%= link_to "Home", root_path %>
 <%= link_to "Chatrooms", root_path %>
+<% if current_user %>
+	<%= current_user.email %>
+<% end %>
 <h1>Chat App</h1>
 <p>Welcome to the site</p>
 <% @chatrooms.each do |chatroom| %>
