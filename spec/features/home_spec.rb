@@ -12,6 +12,7 @@ RSpec.feature "Visit home page" do
 	expect(page).to have_link("Sign in")
 	expect(page).to have_link("Sign up")
 	expect(page).to have_link("Home")
+	expect(page).to have_link("Chatrooms")
 
 	end
 end
