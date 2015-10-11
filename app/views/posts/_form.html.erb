@@ -1,0 +1,5 @@
+<%= simple_form_for @post, remote: true do |f| %>
+	<%= f.input :content %>
+	<%= f.input :chatroom_id,as: :hidden, :input_html => { :value => 1} %>
+	<%= f.button :submit, "post" %>
+<% end %>

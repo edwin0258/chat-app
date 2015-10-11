@@ -9,5 +9,5 @@
 <p>Welcome to the site</p>
 <% @chatrooms.each do |chatroom| %>
 	<%= link_to chatroom.name, chatroom_path(chatroom) %>
-	<%= chatroom.summary %>
+	<%= chatroom.summary %><br>
 <% end %>
